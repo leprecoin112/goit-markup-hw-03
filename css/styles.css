@@ -124,6 +124,15 @@ img {
 }
 
 /* -----------------MAIN-------------------------- */
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section:nth-child(2) {
+  padding-bottom: 0;
+}
+
 .section-title {
   font-size: 36px;
   line-height: 1.16;
@@ -131,11 +140,17 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* -----------------HERO---------------------- */
+/* HERO */
 .hero {
+  padding: 200px 0;
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -146,6 +161,13 @@ img {
 }
 
 .hero-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px 32px;
+  border-radius: 4px;
+  border: none;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
