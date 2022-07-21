@@ -16,6 +16,35 @@ body {
   color: var(--primary-text-color);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  max-width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px solid red;
+}
+
 .link {
   text-decoration: none;
   font-weight: 500;
@@ -33,10 +62,6 @@ body {
   color: var(--hover-text-color);
 }
 
-.list {
-  list-style: none;
-}
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -52,7 +77,16 @@ body {
 
 /* HOME */
 /* -----------------HEADER---------------------- */
+.header {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  margin-right: 93px;
+
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -65,10 +99,31 @@ body {
 .logo-primary {
   color: var(--primary-text-color);
 }
-.contact {
+
+.site-nav {
+  display: flex;
+  column-gap: 50px;
+}
+
+.link-nav {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+  column-gap: 50px;
+}
+
+.header-contact-link {
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: var(--tertiary-text-color);
 }
 
+/* -----------------MAIN-------------------------- */
 .section-title {
   font-size: 36px;
   line-height: 1.16;
